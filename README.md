@@ -17,7 +17,7 @@
 ---
 
 ## Getting started ☄️
-Clone repository to Mod Sources folder (In game menu: ``Workshop > Develop Mods > Open sources``).
+Clone repository to Mod Sources folder (In game menu: ``Workshop > Develop Mods > Open sources`` or in explorer: ``<your username>\Documents\My Games\Terraria\tModLoader\ModSources``).
 
 ## Credits 💖
 Made by [Bit of Meat](https://github.com/Bit-of-Meat) team.

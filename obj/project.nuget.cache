@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "58ku2i3zPiLwGckUOc5YnaCGb5RxVhZDekQrWgHjKCnP1Q6/CnHyniMbY4/SR7umZTiFIXbsaKexmdrW35N3aQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lolol\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\CelebriumSouls\\CelebriumSouls.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lolol\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}

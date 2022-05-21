@@ -1,3 +1,4 @@
 displayName = Celebrium Souls
-author = qBite, BeshkekArt, Hakuto
+author = QBite, BeshkekArt
 version = 0.1
+modReferences = GlowMaskAPI

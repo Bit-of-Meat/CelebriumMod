@@ -6,7 +6,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CelebriumSouls.Items
+namespace CelebriumSouls.Items.SoulHunter
 {
 	public class SoulHunter : ModItem
 	{
@@ -16,14 +16,14 @@ namespace CelebriumSouls.Items
 			// DisplayName.SetDefault("SoulHunter"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
 			Tooltip.SetDefault("This is a basic modded sword.");
 			if (Main.netMode != NetmodeID.Server)
-				glowMask = GlowMaskAPI.Tools.instance.AddGlowMask(mod.GetTexture("Items/SoulHunter_GlowMask"));
+				glowMask = GlowMaskAPI.Tools.instance.AddGlowMask(mod.GetTexture("Items/SoulHunter/SoulHunter_GlowMask"));
 		}
 
 		public override void MeleeEffects(Player player, Rectangle hitbox)
 		{
 			if (Main.rand.Next(3) == 0)
 			{ //There is a 1/6 chance of dust occurring. Experiment with the chances by changing the 6
-				Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, DustID.Electric);
+				Dust.NewDustPerfect(hitbox.Center.ToVector2(), DustID.Electric);
 			}
 		}
 

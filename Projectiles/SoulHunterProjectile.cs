@@ -35,11 +35,9 @@ namespace CelebriumSouls.Projectiles
         {
             projectile.rotation = (float)Math.Atan2((double)projectile.velocity.Y, (double)projectile.velocity.X) + MathHelper.ToRadians(-45);
 
-            int num309 = Dust.NewDust(new Vector2(projectile.Center.X - projectile.velocity.X * 4f + 2f, projectile.position.Y + 2f - projectile.velocity.Y * 4f), 8, 8, 20, projectile.oldVelocity.X, projectile.oldVelocity.Y, 100, default(Color), 1.25f);
-            Main.dust[num309].velocity *= -0.25f;
-            num309 = Dust.NewDust(new Vector2(projectile.Center.X - projectile.velocity.X * 4f + 2f, projectile.position.Y + 2f - projectile.velocity.Y * 4f), 8, 8, 20, projectile.oldVelocity.X, projectile.oldVelocity.Y, 100, default(Color), 1.25f);
-            Main.dust[num309].velocity *= -0.25f;
-            Main.dust[num309].position -= projectile.velocity * 0.5f;
+            int trail = Dust.NewDust(projectile.Center, 8, 8, DustID.PurificationPowder, projectile.oldVelocity.X, projectile.oldVelocity.Y, 100, default(Color), 1.25f);
+            Main.dust[trail].velocity *= -0.25f;
+            Main.dust[trail].position -= projectile.velocity * 0.5f;
             return true;
         }
 

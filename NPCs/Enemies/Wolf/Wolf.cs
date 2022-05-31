@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CelebriumSouls.NPCs.Enemies
+namespace CelebriumSouls.NPCs.Enemies.Wolf
 {
     public class Wolf : ModNPC
     {
